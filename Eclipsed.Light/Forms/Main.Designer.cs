@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            this.lblTitle = new System.Windows.Forms.Label();
             this.gbOptions = new Guna.UI2.WinForms.Guna2GroupBox();
             this.tsAutoUpdater = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.lblAutoUpdater = new System.Windows.Forms.Label();
@@ -46,12 +47,30 @@
             this.tbBhvrSession = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblBhvrSession = new System.Windows.Forms.Label();
             this.btnToggleUnlocker = new Guna.UI2.WinForms.Guna2Button();
+            this.lblFooter = new System.Windows.Forms.Label();
+            this.btnLogs = new Guna.UI2.WinForms.Guna2ImageButton();
             this.tooltip = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             this.lblVersion = new System.Windows.Forms.Label();
             this.gbOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nPrestige)).BeginInit();
             this.gbData.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(12, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(360, 41);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Eclipsed.Light";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // gbOptions
             // 
@@ -346,6 +365,39 @@
             this.btnToggleUnlocker.Text = "Start";
             this.btnToggleUnlocker.Click += new System.EventHandler(this.btnToggleUnlocker_Click);
             // 
+            // lblFooter
+            // 
+            this.lblFooter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblFooter.BackColor = System.Drawing.Color.Transparent;
+            this.lblFooter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblFooter.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblFooter.ForeColor = System.Drawing.Color.White;
+            this.lblFooter.Location = new System.Drawing.Point(1, 445);
+            this.lblFooter.Name = "lblFooter";
+            this.lblFooter.Size = new System.Drawing.Size(177, 26);
+            this.lblFooter.TabIndex = 5;
+            this.lblFooter.Text = "https://eclipsed.top/light";
+            this.lblFooter.Click += new System.EventHandler(this.lblFooter_Click);
+            // 
+            // btnLogs
+            // 
+            this.btnLogs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogs.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogs.CheckedState.Parent = this.btnLogs;
+            this.btnLogs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogs.HoverState.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnLogs.HoverState.Parent = this.btnLogs;
+            this.btnLogs.Image = global::honeypot.Properties.Resources.parchment_50px;
+            this.btnLogs.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnLogs.Location = new System.Drawing.Point(357, 443);
+            this.btnLogs.Name = "btnLogs";
+            this.btnLogs.PressedState.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnLogs.PressedState.Parent = this.btnLogs;
+            this.btnLogs.Size = new System.Drawing.Size(25, 25);
+            this.btnLogs.TabIndex = 7;
+            this.tooltip.SetToolTip(this.btnLogs, "Logs");
+            this.btnLogs.Click += new System.EventHandler(this.btnLogs_Click);
+            // 
             // tooltip
             // 
             this.tooltip.AllowLinksHandling = true;
@@ -376,9 +428,12 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(384, 471);
             this.Controls.Add(this.lblVersion);
+            this.Controls.Add(this.btnLogs);
+            this.Controls.Add(this.lblFooter);
             this.Controls.Add(this.btnToggleUnlocker);
             this.Controls.Add(this.gbData);
             this.Controls.Add(this.gbOptions);
+            this.Controls.Add(this.lblTitle);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -398,6 +453,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblTitle;
         private Guna.UI2.WinForms.Guna2GroupBox gbOptions;
         private System.Windows.Forms.Label lblUnlockAll;
         private System.Windows.Forms.Label lblBweExploit;
@@ -408,6 +465,8 @@
         private System.Windows.Forms.Label lblBanStatus;
         private System.Windows.Forms.Label lblhBanStatus;
         private Guna.UI2.WinForms.Guna2Button btnToggleUnlocker;
+        private System.Windows.Forms.Label lblFooter;
+        private Guna.UI2.WinForms.Guna2ImageButton btnLogs;
         private Guna.UI2.WinForms.Guna2HtmlToolTip tooltip;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblhStatus;
