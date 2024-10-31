@@ -11,7 +11,7 @@ _Simple Dead by Daylight unlocker made by Eclipsed_
 ### - Easter Eggs
 
 ## About **Eclipsed Light**
-Download: [Realease](([https://eclipsed.top](https://github.com/EclipsedDBD/Eclipsed.Light/releases))
+Download: [Realease]([https://eclipsed.top](https://github.com/EclipsedDBD/Eclipsed.Light/releases))
 It was made by Eclipsed to give our userbase a new alternative to "Ana Kata", an very old unlocker that lasted very long.
 We kept everything almost the same UI wise, it still has the simplicity of "Ana Kata".
 The goal of Eclipsed.Light is to keep the legacy of the simple unlocker up while being
